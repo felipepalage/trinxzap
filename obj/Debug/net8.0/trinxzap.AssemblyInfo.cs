@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("trinxzap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7ee06c4b614365e7f0e2780aa4894b0d8687cfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("trinxzap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("trinxzap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

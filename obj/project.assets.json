@@ -3686,11 +3686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felipe\\Desktop\\TrinxZap\\TrinxZap\\trinxzap\\trinxzap.csproj",
-      "projectName": "trinxzap",
-      "projectPath": "C:\\Users\\Felipe\\Desktop\\TrinxZap\\TrinxZap\\trinxzap\\trinxzap.csproj",
+      "projectUniqueName": "D:\\TrinxZap\\trinxzap\\trinxzap\\TechSphere.csproj",
+      "projectName": "TechSphere",
+      "projectPath": "D:\\TrinxZap\\trinxzap\\trinxzap\\TechSphere.csproj",
       "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felipe\\Desktop\\TrinxZap\\TrinxZap\\trinxzap\\obj\\",
+      "outputPath": "D:\\TrinxZap\\trinxzap\\trinxzap\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

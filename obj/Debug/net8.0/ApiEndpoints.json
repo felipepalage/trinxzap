@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "TrinxZap.API.Controllers.PedidoController",
+    "ContainingType": "TechSphere.Controllers.AgendamentoController",
     "Method": "GetAll",
-    "RelativePath": "api/Pedido",
+    "RelativePath": "api/Agendamento",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,25 +10,41 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TrinxZap.API.Controllers.PedidoController",
+    "ContainingType": "TechSphere.Controllers.AgendamentoController",
     "Method": "Create",
-    "RelativePath": "api/Pedido",
+    "RelativePath": "api/Agendamento",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pedido",
-        "Type": "Pedido",
+        "Name": "agendamento",
+        "Type": "TechSphere.Models.Agendamentos.Agendamento",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TrinxZap.API.Controllers.PedidoController",
+    "ContainingType": "TechSphere.Controllers.AgendamentoController",
+    "Method": "Update",
+    "RelativePath": "api/Agendamento",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "agendamento",
+        "Type": "TechSphere.Models.Agendamentos.Agendamento",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.AgendamentoController",
     "Method": "GetById",
-    "RelativePath": "api/Pedido/{id}",
+    "RelativePath": "api/Agendamento/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -42,10 +58,10 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TrinxZap.API.Controllers.PedidoController",
-    "Method": "Update",
-    "RelativePath": "api/Pedido/{id}",
-    "HttpMethod": "PUT",
+    "ContainingType": "TechSphere.Controllers.AgendamentoController",
+    "Method": "Delete",
+    "RelativePath": "api/Agendamento/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -53,19 +69,342 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.AuthController",
+    "Method": "CheckIfExists",
+    "RelativePath": "api/Auth/exists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "pedido",
-        "Type": "Pedido",
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TechSphere.Models.Agendamentos.LoginUsuario",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TrinxZap.API.Controllers.PedidoController",
+    "ContainingType": "TechSphere.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TechSphere.Models.Agendamentos.RegistroUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ConfiguracaoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Configuracao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ConfiguracaoController",
+    "Method": "Create",
+    "RelativePath": "api/Configuracao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "config",
+        "Type": "TechSphere.Models.Agendamentos.Configuracao",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ConfiguracaoController",
+    "Method": "Update",
+    "RelativePath": "api/Configuracao",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "config",
+        "Type": "TechSphere.Models.Agendamentos.Configuracao",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ConfiguracaoController",
+    "Method": "GetById",
+    "RelativePath": "api/Configuracao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ConfiguracaoController",
     "Method": "Delete",
-    "RelativePath": "api/Pedido/{id}",
+    "RelativePath": "api/Configuracao/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.HorarioProfissionalController",
+    "Method": "GetAll",
+    "RelativePath": "api/HorarioProfissional",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.HorarioProfissionalController",
+    "Method": "Create",
+    "RelativePath": "api/HorarioProfissional",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "horario",
+        "Type": "TechSphere.Models.Agendamentos.HorarioProfissional",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.HorarioProfissionalController",
+    "Method": "Update",
+    "RelativePath": "api/HorarioProfissional",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "horario",
+        "Type": "TechSphere.Models.Agendamentos.HorarioProfissional",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.HorarioProfissionalController",
+    "Method": "GetById",
+    "RelativePath": "api/HorarioProfissional/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.HorarioProfissionalController",
+    "Method": "Delete",
+    "RelativePath": "api/HorarioProfissional/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ProfissionalController",
+    "Method": "GetAll",
+    "RelativePath": "api/Profissional",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ProfissionalController",
+    "Method": "Create",
+    "RelativePath": "api/Profissional",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profissional",
+        "Type": "TechSphere.Models.Agendamentos.Profissional",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ProfissionalController",
+    "Method": "Update",
+    "RelativePath": "api/Profissional",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profissional",
+        "Type": "TechSphere.Models.Agendamentos.Profissional",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ProfissionalController",
+    "Method": "GetById",
+    "RelativePath": "api/Profissional/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ProfissionalController",
+    "Method": "Delete",
+    "RelativePath": "api/Profissional/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ServicoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Servico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ServicoController",
+    "Method": "Create",
+    "RelativePath": "api/Servico",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "servico",
+        "Type": "TechSphere.Models.Agendamentos.Servico",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ServicoController",
+    "Method": "Update",
+    "RelativePath": "api/Servico",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "servico",
+        "Type": "TechSphere.Models.Agendamentos.Servico",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ServicoController",
+    "Method": "GetById",
+    "RelativePath": "api/Servico/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TechSphere.Controllers.ServicoController",
+    "Method": "Delete",
+    "RelativePath": "api/Servico/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
